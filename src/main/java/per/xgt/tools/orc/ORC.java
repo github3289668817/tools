@@ -21,8 +21,12 @@ public class ORC {
     private static Gson json = new Gson();
 
     public static void main(String[] args) {
-        String frontJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\录单\\周华\\04eef04010cc658865ba1a98ad07867.jpg", "front");
-        String backJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\录单\\周华\\196d96b1f47bfb708f6887a151f7d3c.jpg", "back");
+
+        //String frontJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\录单\\周华\\04eef04010cc658865ba1a98ad07867.jpg", "front");
+        //String backJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\录单\\周华\\196d96b1f47bfb708f6887a151f7d3c.jpg", "back");
+
+        String frontJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\身份证人像.jpg", "front");
+        String backJson = getIDCardInfo("C:\\Users\\GenT\\Desktop\\身份证国徽.jpg", "back");
         // 格式化数据
         IdCard userInfo = formateIDCardInfoFromJson(frontJson, backJson);
         System.out.println(userInfo);
